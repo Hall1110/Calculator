@@ -2,12 +2,15 @@
 
 namespace Calculator
 {
-    internal class Program
+    public class CalculatorApp
     {
         static void Main(string[] args)
         {
             RunProgram();
         }
+
+
+
 
         static void RunProgram()
         {
@@ -122,7 +125,7 @@ namespace Calculator
         }
 
 
-        static double Addition(double firstValue, double secondValue)
+        public static double Addition(double firstValue, double secondValue)
         {
             
             
@@ -131,7 +134,7 @@ namespace Calculator
 
 
 
-        static double Subtraction(double firstValue, double secondValue)
+        public static double Subtraction(double firstValue, double secondValue)
         {
 
 
@@ -140,7 +143,7 @@ namespace Calculator
         
         
         
-        static double Multiplication(double firstValue, double secondValue)
+        public static double Multiplication(double firstValue, double secondValue)
         {
 
 
@@ -149,7 +152,7 @@ namespace Calculator
 
         
         
-        static double Division(double firstValue, double secondValue)
+        public static double Division(double firstValue, double secondValue)
         {
             if (firstValue == 0 || secondValue == 0) // Extra input validation
             {

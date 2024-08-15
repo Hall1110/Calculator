@@ -10,7 +10,7 @@ namespace Calculator
         }
 
 
-
+        
 
         static void RunProgram()
         {
@@ -43,8 +43,8 @@ namespace Calculator
                     userInput2 = Console.ReadLine();
                 }
 
-                // Ask for the operator
-                Console.WriteLine("Choose an operator from the following list:\n");
+                
+                Console.WriteLine("Choose an operator from the following list:\n"); // Ask for the operator
                 Console.WriteLine("\ta - Add");
                 Console.WriteLine("\ts - Subtract");
                 Console.WriteLine("\tm - Multiply");
@@ -80,8 +80,8 @@ namespace Calculator
 
                             case "d": // Division
 
-                                // Ask the user to enter a non-zero divisor.
-                                if (cleanUserInput1 != 0 && cleanUserInput2 != 0)
+                                            
+                                if (cleanUserInput1 != 0 && cleanUserInput2 != 0) // Ask the user to enter a non-zero divisor.
                                 {
                                     result = Division(cleanUserInput1, cleanUserInput2);
                                 }
@@ -91,8 +91,8 @@ namespace Calculator
                                 }
                                 break;
 
-                            // Return text for an incorrect option entry.
                             default:
+                            // Return text for an incorrect option entry.
 
                                 break;
 
